@@ -422,3 +422,427 @@
             align-items: center;
             gap: 1rem;
         }
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: white;
+        }
+        
+        .contact-text p, .contact-text a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-text a:hover {
+            color: var(--primary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: white;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--gray);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: var(--gray);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Scroll To Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .scroll-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 8rem;
+            }
+            
+            .hero-content {
+                margin-bottom: 3rem;
+            }
+            
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--dark);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: all 0.5s ease;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body data-scroll-container>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Priyanshu<span>.</span></a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" data-scroll-section>
+        <div class="hero-content">
+            <h1 data-scroll data-scroll-speed="1">Hi, I'm <span>Priyanshu Chauhan</span></h1>
+            <p data-scroll data-scroll-speed="0.8">A passionate Front-End Developer with expertise in ReactJS, JavaScript, and modern web technologies. I create beautiful, responsive, and user-friendly websites.</p>
+            <div data-scroll data-scroll-speed="0.6">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image" data-scroll data-scroll-speed="-1">
+            <img src="/SAVE_20250516_111228.jpg" alt="Developer Illustration">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about" data-scroll-section>
+        <h2 class="section-title" data-scroll data-scroll-speed="0.5">About Me</h2>
+        <div class="about-content">
+            <div class="about-image" data-scroll data-scroll-speed="-1">
+                <img src="https://i.pinimg.com/736x/e0/1a/50/e01a50607d417674500ebe5c3511e301.jpg" alt="About Me">
+            </div>
+            <div class="about-text" data-scroll data-scroll-speed="0.8">
+                <h3>Front-End Developer based in Noida, India</h3>
+                <p>I'm currently pursuing my Bachelor's in Computer Application from Quantum University, Roorkee, with a focus on web development technologies. I have a strong foundation in front-end development and a passion for creating interactive and dynamic user experiences.</p>
+                <p>My journey in web development started with HTML, CSS, and JavaScript, and has since expanded to include modern frameworks like ReactJS and libraries like Swiper.js and Locomotive.js that I've used to build this portfolio.</p>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <div class="skills-list">
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">ReactJS</span>
+                        <span class="skill-item">Bootstrap</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience" data-scroll-section>
+        <h2 class="section-title" data-scroll data-scroll-speed="0.5">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item" data-scroll data-scroll-speed="0.3">
+                <div class="experience-header">
+                    <h3 class="experience-title">Full Stack Developer</h3>
+                    <span class="experience-date">Feb 2025 - May 2025</span>
+                </div>
+                <div class="experience-company">Tech Altum Institute</div>
+                <p class="experience-description">
+                    Currently learnin Full Stack Developer, focusing on front-end development with ReactJS and back-end integration. Gaining hands-on experience in building complete web applications from scratch.
+                </p>
+                <a href="https://drive.google.com/file/d/1O6bxboKh6mnGonBTS-IOwziWq5L0YXio/view?usp=drive_link" class="btn" style="margin-top: 1rem;">View Certificate</a>
+
+            </div>
+            <div class="experience-item" data-scroll data-scroll-speed="0.3">
+                <div class="experience-header">
+                    <h3 class="experience-title">Meta Front-End Developer Professional Certificate</h3>
+                    <span class="experience-date">Oct 2025 - Jan 2025</span>
+                </div>
+                <p class="experience-description">
+                    Earned professional certification in Front-End Development from Meta, covering advanced topics in React, UI/UX principles, and responsive web design.
+                </p>
+                <a href="https://shorturl.at/DQ36V" class="btn" style="margin-top: 1rem;">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects" data-scroll-section>
+        <h2 class="section-title" data-scroll data-scroll-speed="0.5">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" data-scroll data-scroll-speed="0.3">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Rejoice Clone" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Rejoice Clone</h3>
+                    <p class="project-description">A clone website built with HTML, CSS, JavaScript, and Bootstrap framework. Features interactive slides and animations using Swiper.js and Locomotive.js.</p>
+                    <div class="project-skills">
+                        <span class="project-skill">HTML5</span>
+                        <span class="project-skill">CSS3</span>
+                        <span class="project-skill">JavaScript</span>
+                        <span class="project-skill">SwiperJS</span>
+                        <span class="project-skill">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://pcsitesorgpp.netlify.app/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-scroll data-scroll-speed="0.3">
+                <img src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80" alt="Weather Application" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Weather Application</h3>
+                    <p class="project-description">A fully responsive weather app using OpenWeatherMap API to display real-time weather data based on user input. Features temperature, humidity, wind speed, and weather conditions.</p>
+                    <div class="project-skills">
+                        <span class="project-skill">HTML5</span>
+                        <span class="project-skill">CSS3</span>
+                        <span class="project-skill">JavaScript</span>
