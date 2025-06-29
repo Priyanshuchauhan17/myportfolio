@@ -27,12 +27,5 @@ Welcome to my personal portfolio website! This is a responsive and modern fronte
 - Locomotive Scroll
 - Netlify (Deployment)
 
----
 
-
-
-
----
-
-## 📁 Folder Structure (If Available)
 
