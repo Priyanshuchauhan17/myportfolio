@@ -29,11 +29,8 @@ Welcome to my personal portfolio website! This is a responsive and modern fronte
 
 ---
 
-## 📸 Preview
 
-![Portfolio Screenshot](https://via.placeholder.com/1200x600.png?text=Add+a+Screenshot+of+Your+Site+Here)
 
-> _You can replace the above image link with an actual screenshot of your site._
 
 ---
 
